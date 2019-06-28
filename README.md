@@ -78,19 +78,19 @@ The project folder structure and classes based on the respective layers have des
 ```
 \\src\test\java\testscripts
 ```
-> * BaseTest.java : 
-> * VerifyCategoriesTest.java :
+> * BaseTest.java : This is the parent class for all test classes which contains Base URI and before and after test methods.
+> * VerifyCategoriesTest.java : Contains test script related to categories URI validation.
 
 ***Business Layer***
 ```
 \\src\main\java\services
 ```
-> * CategoriesHelper.java : 
+> * CategoriesHelper.java : Contains Categories resource related domain specific methods.
 
 
 ***Core Layer***
 ```
 \\src\main\java\common
 ```
-> * RestCallHelper.java 
-> * Utils.java :
+> * RestCallHelper.java : Contains REST response related methods.
+> * Utils.java : Contains generic methods to be used across the entire framework.

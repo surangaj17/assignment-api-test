@@ -38,7 +38,7 @@ Testing requirement is to validate below three acceptance criteria against the R
 
 ## Usage
 To run the scripts:
-> Since there are only one test case available we can directly run below command
+> Since the testng.xml set as the default test plan in the pom, we can directly run below command,
 ```
 mvn test 
 
@@ -47,13 +47,19 @@ mvn test
 
 
 ```
-mvn clean test -DsuiteXmlFile=testng.xml 
+mvn test -Dsurefire.suiteXmlFiles=testplans/testng.xml
 
 ```
 ## Test Results report
-> TestNg will generates report which you can find in below  location.
 
-Navigate to the `<Local repo>\assignment-api-test\target\surefire-reports` folder and open the `emailable-report.html` on your default web browser. You will see a html report as below,
+* In command prompt window  you will see below results
+
+![picture alt](https://raw.githubusercontent.com/surangaj17/assignment-api-test/master/readmecontent/commandline_results.JPG "Command prompt results")
+
+
+* TestNg generates report which you can find in the below location.
+
+Navigate to `<Local repo>\assignment-api-test\target\surefire-reports` folder and open the `emailable-report.html` on your default web browser. You will see a html report as below,
 
 ![picture alt](https://raw.githubusercontent.com/surangaj17/assignment-api-test/master/readmecontent/emailable-report.JPG "emailable-report.html")
 
@@ -70,7 +76,7 @@ The project folder structure and classes based on the respective layers have des
 
 ***Test Layer***
 ```
-\\src\test\java\test
+\\src\test\java\testscripts
 ```
 > * BaseTest.java : 
 > * VerifyCategoriesTest.java :
@@ -79,7 +85,7 @@ The project folder structure and classes based on the respective layers have des
 ```
 \\src\main\java\services
 ```
-> * Categories.java : 
+> * CategoriesHelper.java : 
 
 
 ***Core Layer***

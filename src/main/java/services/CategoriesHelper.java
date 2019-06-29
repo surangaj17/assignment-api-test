@@ -16,27 +16,25 @@ public class CategoriesHelper {
 		RestCallHelper RestCall = new RestCallHelper();
 		
 		 JSONObject obj = new JSONObject(RestCall.getResponceBody(response));
-			// String pageName = obj.getJSONObject("pageInfo").getString("pageName");
 
 			 JSONArray arr = obj.getJSONArray("Promotions");
 			 for (int i = 0; i < arr.length(); i++)
 			 {
 			     String post_id = arr.getJSONObject(i).getString("Name");
-			     //System.out.println("Promotion Name is : " + post_id);
-			     //"Gallery"
 			     if  (post_id.equals(name)) {
 			    	 strDescription = arr.getJSONObject(i).getString("Description");
-
-			    	 
-			    	 //String bodyAsString = body.asString();
-			    	 //Assert.assertEquals(strDescription.contains("2x larger image") , true, "Description of " + post_id + "  contains 2x larger image");
-			    	}
-			     }
-		
-		
+			     	}
+			 }
 		
 		return strDescription;
 		
 		
+	}
+	
+	public String getCategoriesPath(String categoryID, String catalogueFlag) {
+		
+		String path="/Categories/"+categoryID+"/Details.json?catalogue=" + catalogueFlag;
+		
+		return path;
 	}
 }

@@ -56,7 +56,7 @@ public class VerifyCategoriesTest extends BaseTest{
 				assertion.fail(RestAssured.baseURI + " Host is unreachable");
 
 			}
-		// Collects all the assertions of the test and validate
+		// Collects all the assertions of the test
 		assertion.assertAll();
 	 }
 	 

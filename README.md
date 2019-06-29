@@ -1,7 +1,7 @@
 # Assurity API Assignment
 
 >This is an API automation test project written as an assignment in Assurity consulting interview process. 
-Testing requirement is to validate below three acceptance criteria against the REST API response of the given URI.
+Testing requirements are to validate below three acceptance criteria against the REST API response of the given URI.
 
  **API** = [https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false](https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false)
 

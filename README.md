@@ -1,6 +1,6 @@
-# Assurity API Assignment
+# API Test Assignment
 
->This is an API automation test project written as an assignment in Assurity consulting interview process. 
+>This is an API automation test project written as an assignment for an interview. 
 Testing requirements are to validate below three acceptance criteria against the REST API response of the given URI.
 
  **API** = [https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false](https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false)
@@ -22,9 +22,9 @@ Testing requirements are to validate below three acceptance criteria against the
 
 ## Setup
 
-* Install JDK 8 and set JAVA_HOME
-* Install Maven and set M2_HOME
-* Install Git
+* Install JDK 8 and set JAVA_HOME [If not available]
+* Install Maven and set M2_HOME [If not available]
+* Install Git [If not available]
 * Navigate to the directory you want to cloned the code
 * Right click on the folder window and click 'Git Bash Here'
 * Type git clone, and then paste the URL "" and press 'Enter'.

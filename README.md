@@ -37,13 +37,14 @@ Testing requirements are to validate below three acceptance criteria against the
 
 
 ## Usage
-To run the scripts:
-> Since the testng.xml set as the default test plan in the pom, we can directly run below command,
+To run the scripts, open command prompt and navigate in to the clonned project folder `assignment-api-test` where `pom.xml` exists.
+
+> Since the testng.xml set as the default test plan in the pom, test project can directly run as below,
 ```
 mvn test 
 
 ```
->Or we can execute testng.xml or  any other test plan passing as a parameter through command line as below,
+>Or else, can execute testng.xml or any other test plan, passing as a parameter through command line as below,
 
 
 ```
@@ -74,21 +75,21 @@ This automation framework designed as a three-layered architecture, in which sol
 
 The project folder structure and classes based on the respective layers have described below.
 
-***Test Layer***
+***Test Layer*** contains test scripts and related test classes. 
 ```
 \\src\test\java\testscripts
 ```
-> * BaseTest.java : This is the parent class for all test classes which contains Base URI and before and after test methods.
-> * VerifyCategoriesTest.java : Contains test script related to categories URI validation.
+> * BaseTest.java : This is the parent class of all test classes, which contains Base URI and before and after test methods. Can include any common prerequisite methods for tests here.
+> * VerifyCategoriesTest.java : Contains test script related to categories URI validation. This is a child class of BaseTest.java.
 
-***Business Layer***
+***Business Layer*** contains classes related to the application domain specific requirements.
 ```
 \\src\main\java\services
 ```
 > * CategoriesHelper.java : Contains Categories resource related domain specific methods.
 
 
-***Core Layer***
+***Core Layer*** contains all the classes and methods related to framework and common purpose. 
 ```
 \\src\main\java\common
 ```

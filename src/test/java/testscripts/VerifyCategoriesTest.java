@@ -10,7 +10,12 @@ import common.RestCallHelper;
 import common.Utils;
 import services.*;
 
-
+/**
+ * This is the Categories details verification test class 
+ * which includes the verification of categories for given category id and catalouge flag.
+ * @author Suranga J
+ *
+ */
 public class VerifyCategoriesTest extends BaseTest{
 	
 	RestCallHelper RestCall = new RestCallHelper();

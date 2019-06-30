@@ -8,6 +8,11 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+/**
+ * This is a helper class which contains REST request and  response related methods.
+ * @author Suranga J
+ *
+ */
 public class RestCallHelper {
 
 	/**

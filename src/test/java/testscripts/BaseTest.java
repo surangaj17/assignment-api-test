@@ -4,7 +4,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import common.RestCallHelper;
-
+/**
+ * This is the Base Test class which is the parent of all test classes. This should contains all the common prerequisite methods for test classes.
+ * @author Suranga J
+ *
+ */
 public class BaseTest {
 
 	

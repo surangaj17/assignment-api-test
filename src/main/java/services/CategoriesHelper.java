@@ -7,6 +7,11 @@ import org.testng.Assert;
 import common.RestCallHelper;
 import io.restassured.response.Response;
 
+/**
+ * This is a helper class which contains Categories resource related domain specific methods.
+ * @author Suranga J
+ *
+ */
 public class CategoriesHelper {
 
 	

@@ -2,6 +2,11 @@ package common;
 
 import org.testng.Reporter;
 
+/**
+ * This is a utility class which contains all the common methods across the framework.
+ * @author Suranga J
+ *
+ */
 public class Utils {
 
 	/**

@@ -25,7 +25,7 @@ Testing requirements are to validate below three acceptance criteria against the
 * Install JDK 8 and set JAVA_HOME [If not available]
 * Install Maven and set M2_HOME [If not available]
 * Install Git [If not available]
-* Navigate to the directory you want to cloned the code
+* Navigate to the directory you want to cloned the code.
 * Right click on the folder window and click 'Git Bash Here'
 * Type git clone, and then paste the URL "" and press 'Enter'.
   ```
